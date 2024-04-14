@@ -89,7 +89,7 @@ class DiceGame:
         self.turn_index = 0
 
 def main():
-    application = Application.builder().token('7138013436:AAH-b8fjp_2xIP4MGfJJ9LN__GEgjiHkAW0').build()
+    application = Application.builder().token('Your Telegram Bot Token').build()
 
     game = DiceGame()
     application.add_handler(CommandHandler('start', game.start))
